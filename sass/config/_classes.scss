@@ -1,0 +1,33 @@
+/*****************
+* CUSTOM CLASSES *
+*****************/
+
+.strong {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.content-box {
+  box-shadow: 0 6px 12px rgba($black, 0.175);
+  border: 1px solid $grey;
+  background: $white;
+  position: relative;
+}
+.text-center {
+  text-align:center;
+}
+.disclaimer {
+  font-size: 1.25em;
+}
+.no-style-link {
+  text-decoration:none;
+}
+img.right-bottom-corner {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}

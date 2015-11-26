@@ -11,15 +11,35 @@
 
 ?>
 
-      </div><!-- #content -->
-
-      <footer id="colophon" class="site-footer" role="contentinfo">
-        <div class="site-info">
-          <a href="<?php echo esc_url( __( 'https://wordpress.org/', 'lifestyles-for-seniors' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'lifestyles-for-seniors' ), 'WordPress' ); ?></a>
-          <span class="sep"> | </span>
-          <?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'lifestyles-for-seniors' ), 'lifestyles-for-seniors', '<a href="http://www.jimmypocock.com" rel="designer">Jimmy Pocock</a>' ); ?>
-        </div><!-- .site-info -->
-      </footer><!-- #colophon -->
+      <footer id="main-footer" class="site-footer" role="contentinfo">
+        <div class="row footer-row text-center">
+          <span class="strong">
+            <span class="info-item">
+              <a href="tel:18005183644">
+                Phone: 1.800.518.3644
+              </a>
+            </span>
+            <span class="info-item">
+              Fax: 1.866.847.5508
+            </span>
+            <span class="info-item">
+              <a href="http://www.lifestylesforseniors.net">
+                www.lifestylesforseniors.net
+              </a>
+            </span>
+          </span>
+        </div>
+        <div class="row footer-row text-center">
+          <span class="strong italic">
+            For advertising opportunities or become a distribution point please call us or email at <a href="mailto:info@gcpublications.com">info@gcpublications.com</a></span>
+          </span>
+        </div>
+        <div class="row footer-row text-center">
+          <span>
+            Copyright <i class="fa fa-copyright"></i> <?php echo date("Y"); ?> GC Publications, LLC. All Rights Reserved. Designed by Shweiki Design &amp; Marketing
+          </span>
+        </div>
+      </footer><!-- #main-footer -->
     </div><!-- #page -->
 
     <?php wp_footer(); ?>

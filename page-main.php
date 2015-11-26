@@ -7,7 +7,7 @@ get_header(); ?>
 
   <!-- MAIN CONTENT
 ================================================== -->
-<div class="page page-main">
+<div id="page-main" class="page">
   <div class="container">
     <div id="primary">
 

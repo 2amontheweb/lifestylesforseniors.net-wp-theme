@@ -42,19 +42,19 @@
     <div id="page" class="site">
       <a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'lifestyles-for-seniors' ); ?></a>
 
-      <header id="masthead" class="site-header" role="banner">
-        <div class="social-bar">
-          <div class="align-right">
+      <header id="header-main" class="site-header" role="banner">
+        <div class="row social-bar">
+          <div class="float-left">
             <div class="social-item">
               <i class="fa fa-phone"></i>
-              1.800.517.1134
+              <span class="text">1.800.517.1134</span>
             </div>
             <div class="social-item">
               <i class="fa fa-fax"></i>
-              1.866.847.5508
+              <span class="text">1.866.847.5508</span>
             </div>
           </div>
-          <div class="align-left">
+          <div class="float-right">
             <div class="social-item">
               <a href="http://www.yelp.com" target="_blank">
                 <i class="fa fa-yelp"></i>
