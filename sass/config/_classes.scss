@@ -8,8 +8,8 @@
   border: 1px solid $grey;
   background: $white;
   position: relative;
-  @include rem-fallback(margin-top, 1);
-  @include rem-fallback(margin-bottom, 1);
+  @include rem-fallback(margin-top, 1.5);
+  @include rem-fallback(margin-bottom, 1.5);
   @include rem-fallback(padding, 1);
 }
 .strong {
@@ -36,5 +36,13 @@ img.right-bottom-corner {
   right: 10px;
 }
 .master-slider-container {
-  min-width: 450px;
+  min-height: 450px;
+}
+.right-bottom-corner {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  @include mobile {
+    display: none;
+  }
 }

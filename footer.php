@@ -12,34 +12,37 @@
 ?>
 
       <footer id="footer-main" class="site-footer" role="contentinfo">
-        <div class="row footer-row text-center">
-          <span class="strong">
-            <span class="info-item">
-              <a href="tel:18005183644">
-                Phone: 1.800.518.3644
-              </a>
-            </span>
-            <span class="info-item">
-              <span class="text">
-                Fax: 1.866.847.5508
+        <div class="container">
+          <div class="row text-center">
+            <span class="strong">
+              <span class="info-item border-right">
+                <a href="tel:18005183644">
+                  Phone: 1.800.518.3644
+                </a>
+              </span>
+              <span class="info-item border-right">
+                <span class="text">
+                  Fax: 1.866.847.5508
+                </span>
+              </span>
+              <span class="info-item">
+                <a href="http://www.lifestylesforseniors.net">
+                  www.lifestylesforseniors.net
+                </a>
               </span>
             </span>
-            <span class="info-item">
-              <a href="http://www.lifestylesforseniors.net">
-                www.lifestylesforseniors.net
-              </a>
+          </div>
+          <div class="row text-center">
+            <span class="strong italic text">
+              For advertising opportunities or become a distribution point please call us or email at <a href="mailto:info@gcpublications.com">info@gcpublications.com</a></span>
             </span>
-          </span>
-        </div>
-        <div class="row footer-row text-center">
-          <span class="strong italic text">
-            For advertising opportunities or become a distribution point please call us or email at <a href="mailto:info@gcpublications.com">info@gcpublications.com</a></span>
-          </span>
-        </div>
-        <div class="row footer-row text-center">
-          <span class="text">
-            Copyright <i class="fa fa-copyright"></i> <?php echo date("Y"); ?> GC Publications, LLC. All Rights Reserved. Designed by Shweiki Design &amp; Marketing
-          </span>
+          </div>
+          <div class="row text-center bottom-row">
+            <span class="text">
+              Copyright <i class="fa fa-copyright"></i> <?php echo date("Y"); ?> GC Publications, LLC. All Rights Reserved. Designed by Shweiki Design &amp; Marketing
+            </span>
+          </div>
+          <img src="<?php bloginfo('stylesheet_directory') ?>/img/equal-housing-logo-white.png" class="equal-housing-logo">
         </div>
       </footer><!-- #main-footer -->
     </div><!-- #page -->

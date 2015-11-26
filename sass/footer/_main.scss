@@ -1,6 +1,32 @@
 #footer-main {
   background: $blue;
+  @include rem-fallback(padding, 1.5, 0, 3);
+  .container {
+    position: relative;
+  }
   a, i, .text {
     color: $grey;
+    font-size: 1.25em;
+  }
+  .text {
+    i, a {
+      font-size: 1em;
+    }
+  }
+  .border-right {
+    border-right: 2px solid $grey;
+    @include rem-fallback(padding-right, 0.25);
+    @include rem-fallback(margin-right, 0.5);
+  }
+  .bottom-row {
+    @include rem-fallback(padding-top, 1.5);
+  }
+  .equal-housing-logo {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    @include tablet {
+      display: none;
+    }
   }
 }
