@@ -1,0 +1,56 @@
+/**********
+ * AVENIR *
+ *********/
+
+ @font-face {
+  font-family: 'Avenir';
+  src: url('fonts/avenir/Avenir-Book.ttf');
+  src: url('fonts/avenir/Avenir-Book.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/avenir/Avenir-Medium.ttf');
+  src: url('fonts/avenir/Avenir-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/avenir/Avenir-Medium.ttf');
+  src: url('fonts/avenir/Avenir-MediumOblique.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+/***************
+ * AVENIR NEXT *
+ **************/
+
+ @font-face {
+  font-family: 'Avenir Next';
+  src: url('fonts/avenir-next/AvenirNext-Medium.ttf');
+  src: url('fonts/avenir-next/AvenirNext-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*************************
+ * AVENIR NEXT CONDENSED *
+ ************************/
+
+ @font-face {
+  font-family: 'Avenir Next Condensed';
+  src: url('fonts/avenir-next-condensed/AvenirNextCondensed-Medium.ttf');
+  src: url('fonts/avenir-next-condensed/AvenirNextCondensed-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+$avenir: 'Avenir', Futura, Verdana, Geneva, sans-serif;
+$next: 'Avenir Next', Futura, Verdana, Geneva, sans-serif;
+$condensed: 'Avenir Next Condensed', Futura, Verdana, Geneva, sans-serif;

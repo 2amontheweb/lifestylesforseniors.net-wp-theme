@@ -20,7 +20,6 @@ gulp.task('script', function() {
 
 gulp.task('sass', function () {
   var version = argv.version ? argv.version.replace(/-/g , '.') : 'No Version Number Given';
-  console.log(argv);
   gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer({

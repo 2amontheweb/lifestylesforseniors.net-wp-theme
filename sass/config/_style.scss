@@ -1,0 +1,98 @@
+/***************
+ * BASIC STYLE *
+ ***************/
+
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+  height: 100%;
+  font-size: 16px;
+
+  body {
+    font-size: 62.5%;
+    color: $black;
+    background-color: $grey;
+    font-family: $avenir;
+  }
+}
+
+.container, .container-fluid {
+  padding: 0;
+  margin: 0 auto;
+  @include mobile {
+    @include rem-fallback(padding, 0, 1);
+  }
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  padding: 0;
+  margin: 0;
+  color: $black;
+  font-family: $avenir;
+  text-align: center;
+  line-height: 1.4;
+}
+
+a {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  &:visited,
+  &:focus,
+  &:hover {
+    text-decoration:none;
+  }
+}
+
+a,
+button,
+input {
+  outline: 0 !important;
+}
+
+div[class^="col-"], div[class*=" col-"] {
+  padding: 0;
+}
+
+.strong {
+  font-weight: bold;
+}
+.italic {
+  font-style: italic;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.content-box {
+  box-shadow: 0 6px 12px rgba(0,0,0, 0.175);
+  border: 1px solid $grey;
+  background: $white;
+  position: relative;
+}
+.center {
+  text-align:center;
+}
+.disclaimer {
+  font-size: 1.25em;
+}
+.no-style-link {
+  text-decoration:none;
+}
+img.right-bottom-corner {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
