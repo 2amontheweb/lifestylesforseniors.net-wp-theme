@@ -1,16 +1,96 @@
 #header-main {
   background: $black;
 
-  i, a, .text {
-    color: $grey;
+  .social-bar {
+    @include rem-fallback(padding, 0.5, 0);
+    i, a, .text {
+      color: $grey;
+    }
+    a {
+      text-decoration: none;
+      transition: all 0.3s ease;
+      &:hover {
+        i, .text {
+          transition: all 0.3s ease;
+          color: lighten($blue, 30%);
+        }
+      }
+    }
+    .float-left {
+      float: left;
+      i {
+        @include rem-fallback(padding-right, 0.5)
+      }
+    }
+    .float-right {
+      float: right;
+    }
+    .social-item {
+      float: left;
+      &.padding-right {
+        @include rem-fallback(padding-right, 1.5);
+      }
+      i {
+        font-size: 1.55em;
+      }
+      .text {
+        font-size: 1.45em;
+      }
+    }
+
   }
-  a {
-    text-decoration: none;
-  }
-  .float-left {
-    float: left;
-  }
-  .float-right {
-    float: right;
+  .navbar {
+    margin-bottom: 0;
+    @include rem-fallback(padding-top, 0.5);
+    @include rem-fallback(padding-bottom, 0.5);
+    .navbar-brand {
+      height: 75px;
+      padding: 0;
+      img {
+        display: inline;
+        height: 75px;
+      }
+      .text {
+        color: white;
+        text-transform: uppercase;
+        font-family: $next;
+        font-weight: 600;
+        font-size: 1em;
+        @include rem-fallback(padding-left, 0.5);
+      }
+    }
+    .navbar-collapse {
+      @include aboveMobile {
+        padding-right: 0;
+        padding-left: 0;
+        padding-top: 20px;
+      }
+    }
+    .navbar-nav {
+      li {
+        a {
+          transition: all 0.3s ease;
+          font-family: $condensed;
+          background: $blue;
+          color: $white;
+          font-size: 1.25em;
+          font-weight: 600;
+          text-transform: uppercase;
+          box-shadow: 0 3px 6px rgba($black, 0.175);
+          text-shadow: 0 3px 6px rgba($black, 0.175);
+          @include rem-fallback(margin-right, 2);
+          @include rem-fallback(padding, 0.25, 0.75);
+          &:hover {
+            background: $white;
+            color: $blue;
+          }
+        }
+        &:last-child {
+          a {
+            margin-right: 0;
+          }
+        }
+      }
+    }
   }
 }

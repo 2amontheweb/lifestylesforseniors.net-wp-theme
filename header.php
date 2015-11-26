@@ -44,35 +44,37 @@
 
       <header id="header-main" class="site-header" role="banner">
         <div class="row social-bar">
-          <div class="float-left">
-            <div class="social-item">
-              <i class="fa fa-phone"></i>
-              <span class="text">1.800.517.1134</span>
+          <div class="container">
+            <div class="float-left">
+              <div class="social-item padding-right">
+                <i class="fa fa-phone"></i>
+                <span class="text">1.800.517.1134</span>
+              </div>
+              <div class="social-item">
+                <i class="fa fa-fax"></i>
+                <span class="text">1.866.847.5508</span>
+              </div>
             </div>
-            <div class="social-item">
-              <i class="fa fa-fax"></i>
-              <span class="text">1.866.847.5508</span>
-            </div>
-          </div>
-          <div class="float-right">
-            <div class="social-item">
-              <a href="http://www.yelp.com" target="_blank">
-                <i class="fa fa-yelp"></i>
-              </a>
-            </div>
-            <div class="social-item">
-              <a href="https://twitter.com" target="_blank">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </div>
-            <div class="social-item">
-              <a href="https://www.facebook.com" target="_blank">
-                <i class="fa fa-facebook-square"></i>
-              </a>
+            <div class="float-right">
+              <div class="social-item padding-right">
+                <a href="http://www.yelp.com" target="_blank">
+                  <i class="fa fa-yelp"></i>
+                </a>
+              </div>
+              <div class="social-item padding-right">
+                <a href="https://twitter.com" target="_blank">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </div>
+              <div class="social-item">
+                <a href="https://www.facebook.com" target="_blank">
+                  <i class="fa fa-facebook-square"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-        <nav class="navbar" id="home-nav">
+        <nav class="navbar">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -82,7 +84,10 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="Top 50 Nav Logo">Lifestyles for Seniors</a>
+              <a class="navbar-brand" href="#">
+                <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="Top 50 Nav Logo">
+                <span class="text">Lifestyles for Seniors</span>
+              </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -92,7 +97,7 @@
                 'theme_location' => 'header',
                 'container'       => 'nav',
                 'container_class' => 'navbar-collapse collapse',
-                'menu_class'        => 'nav navbar-nav row'
+                'menu_class'        => 'nav navbar-nav navbar-right row'
 
               ) );
             ?>

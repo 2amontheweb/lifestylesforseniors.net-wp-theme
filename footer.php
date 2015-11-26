@@ -11,7 +11,7 @@
 
 ?>
 
-      <footer id="main-footer" class="site-footer" role="contentinfo">
+      <footer id="footer-main" class="site-footer" role="contentinfo">
         <div class="row footer-row text-center">
           <span class="strong">
             <span class="info-item">
@@ -20,7 +20,9 @@
               </a>
             </span>
             <span class="info-item">
-              Fax: 1.866.847.5508
+              <span class="text">
+                Fax: 1.866.847.5508
+              </span>
             </span>
             <span class="info-item">
               <a href="http://www.lifestylesforseniors.net">
@@ -30,12 +32,12 @@
           </span>
         </div>
         <div class="row footer-row text-center">
-          <span class="strong italic">
+          <span class="strong italic text">
             For advertising opportunities or become a distribution point please call us or email at <a href="mailto:info@gcpublications.com">info@gcpublications.com</a></span>
           </span>
         </div>
         <div class="row footer-row text-center">
-          <span>
+          <span class="text">
             Copyright <i class="fa fa-copyright"></i> <?php echo date("Y"); ?> GC Publications, LLC. All Rights Reserved. Designed by Shweiki Design &amp; Marketing
           </span>
         </div>

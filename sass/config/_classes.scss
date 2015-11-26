@@ -2,6 +2,16 @@
 * CUSTOM CLASSES *
 *****************/
 
+
+.content-box {
+  box-shadow: 0 6px 12px rgba($black, 0.175);
+  border: 1px solid $grey;
+  background: $white;
+  position: relative;
+  @include rem-fallback(margin-top, 1);
+  @include rem-fallback(margin-bottom, 1);
+  @include rem-fallback(padding, 1);
+}
 .strong {
   font-weight: bold;
 }
@@ -10,12 +20,6 @@
 }
 .uppercase {
   text-transform: uppercase;
-}
-.content-box {
-  box-shadow: 0 6px 12px rgba($black, 0.175);
-  border: 1px solid $grey;
-  background: $white;
-  position: relative;
 }
 .text-center {
   text-align:center;
@@ -30,4 +34,7 @@ img.right-bottom-corner {
   position: absolute;
   bottom: 10px;
   right: 10px;
+}
+.master-slider-container {
+  min-width: 450px;
 }
