@@ -42,6 +42,7 @@
   .navbar {
     margin-bottom: 0;
     @include rem-fallback(padding-bottom, 0.5);
+
     .navbar-brand {
       height: 75px;
       padding: 0 0 0 15px;
@@ -58,11 +59,20 @@
         @include rem-fallback(padding-left, 0.5);
       }
     }
+    .navbar-toggle {
+      background: $black;
+      box-shadow: 0 0 0;
+      border: 1px solid $white;
+      margin-top: 16.5px;
+      .icon-bar {
+        background: $white;
+      }
+    }
     .navbar-collapse {
+      padding-top: 20px;
       @include aboveMobile {
         padding-right: 0;
         padding-left: 0;
-        padding-top: 20px;
       }
     }
     .navbar-nav {
@@ -82,6 +92,9 @@
           &:hover {
             background: $white;
             color: $blue;
+          }
+          @include mobile {
+            background: transparent;
           }
         }
         &:last-child {

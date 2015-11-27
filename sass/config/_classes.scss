@@ -12,11 +12,15 @@
   @include rem-fallback(margin-bottom, 1.5);
   @include rem-fallback(padding, 1);
   .content-left {
-    border-right: 2px solid $grey;
-    @include rem-fallback(padding-right, 2);
+    @include aboveMobile {
+      border-right: 2px solid $grey;
+      @include rem-fallback(padding-right, 2);
+    }
   }
   .content-right {
-    @include rem-fallback(padding-left, 2);
+    @include aboveMobile {
+      @include rem-fallback(padding-left, 2);
+    }
   }
 }
 .strong {
@@ -70,9 +74,7 @@ input[type="submit"].blue-button {
   box-shadow: 0 3px 6px rgba($black, 0.175);
   text-shadow: 0 3px 6px rgba($black, 0.175);
   letter-spacing: 0.5px;
-
   @include rem-fallback(margin-top, 1);
-  @include rem-fallback(margin-right, 2);
   @include rem-fallback(padding, 0.5, 1.5);
   &:visited {
     color: $white;
@@ -80,6 +82,11 @@ input[type="submit"].blue-button {
   &:hover {
     background: lighten($blue, 70%);
     color: $blue;
+  }
+  @include mobile {
+    display: block;
+    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -101,8 +108,11 @@ input[type="text"].input,
 input[type="email"].input,
 input[type="phone"].input,
 textarea.input {
-  padding: 0.5rem 1rem;
-  border: 1px solid black;
+  border: 1px solid $black;
   border-radius: 1px;
-  margin-bottom: 1rem;
+  @include rem-fallback(padding, 0.5, 1);
+  @include rem-fallback(margin-bottom, 1);
+  @include mobile {
+    width: 100%;
+  }
 }
