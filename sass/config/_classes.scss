@@ -36,6 +36,7 @@
 }
 .no-style-link {
   text-decoration:none;
+  color: $black;
 }
 img.right-bottom-corner {
   position: absolute;
@@ -84,4 +85,13 @@ img.right-bottom-corner {
 .button-margin {
   @include rem-fallback(margin-top, 1.5);
   @include rem-fallback(margin-bottom, 1.5);
+}
+.no-padding {
+  padding: 0;
+}
+.padding-bottom-2 {
+  @include rem-fallback(padding-bottom, 2);
+}
+.padding-bottom-6 {
+  @include rem-fallback(padding-bottom, 6);
 }
