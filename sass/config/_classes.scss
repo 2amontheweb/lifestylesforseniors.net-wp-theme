@@ -11,6 +11,13 @@
   @include rem-fallback(margin-top, 1.5);
   @include rem-fallback(margin-bottom, 1.5);
   @include rem-fallback(padding, 1);
+  .content-left {
+    border-right: 2px solid $grey;
+    @include rem-fallback(padding-right, 2);
+  }
+  .content-right {
+    @include rem-fallback(padding-left, 2);
+  }
 }
 .strong {
   font-weight: bold;
@@ -36,7 +43,7 @@ img.right-bottom-corner {
   right: 10px;
 }
 .master-slider-container {
-  min-height: 450px;
+  // min-height: 450px;
 }
 .right-bottom-corner {
   position: absolute;
@@ -45,4 +52,36 @@ img.right-bottom-corner {
   @include mobile {
     display: none;
   }
+}
+.blue-button {
+  transition: all 0.3s ease;
+  font-size: 2em;
+  font-family: $next;
+  letter-spacing: 0.5px;
+  max-width: 200px;
+  margin: 0 auto;
+  font-family: $condensed;
+  background: $blue;
+  color: $white;
+  font-weight: 600;
+  text-transform: uppercase;
+  box-shadow: 0 3px 6px rgba($black, 0.175);
+  text-shadow: 0 3px 6px rgba($black, 0.175);
+  letter-spacing: 0.5px;
+
+  @include rem-fallback(margin-top, 1);
+  @include rem-fallback(margin-right, 2);
+  @include rem-fallback(padding, 0.5, 1.5);
+  &:visited {
+    color: $white;
+  }
+  &:hover {
+    background: lighten($blue, 70%);
+    color: $blue;
+  }
+}
+
+.button-margin {
+  @include rem-fallback(margin-top, 1.5);
+  @include rem-fallback(margin-bottom, 1.5);
 }

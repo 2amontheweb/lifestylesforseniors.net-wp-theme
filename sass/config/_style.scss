@@ -40,10 +40,33 @@ html{
 
 h1, h2, h3, h4, h5, h6, p {
   padding: 0;
-  margin: 0;
   color: $black;
   font-family: $avenir;
   line-height: 1.4;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: $next;
+  letter-spacing: 1px;
+  @include rem-fallback(padding-bottom, 1);
+}
+h5 {
+  @include rem-fallback(padding-bottom, 1);
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.75;
+  letter-spacing: 0.5px;
+  @include rem-fallback(padding-bottom, 1);
+}
+
+li {
+  font-size: 1.25em;
+  letter-spacing: 0.5px;
 }
 
 a {
