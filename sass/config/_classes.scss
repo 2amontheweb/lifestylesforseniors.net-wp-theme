@@ -54,7 +54,8 @@ img.right-bottom-corner {
     display: none;
   }
 }
-.blue-button {
+.blue-button,
+input[type="submit"].blue-button {
   transition: all 0.3s ease;
   font-size: 2em;
   font-family: $next;
@@ -94,4 +95,14 @@ img.right-bottom-corner {
 }
 .padding-bottom-6 {
   @include rem-fallback(padding-bottom, 6);
+}
+.input,
+input[type="text"].input,
+input[type="email"].input,
+input[type="phone"].input,
+textarea.input {
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 1px;
+  margin-bottom: 1rem;
 }
