@@ -19,7 +19,7 @@
     .float-left {
       float: left;
       i {
-        @include rem-fallback(padding-right, 0.5)
+        @include rem-fallback(padding-right, 0.5);
       }
     }
     .float-right {
@@ -37,7 +37,13 @@
         font-size: 1.45em;
       }
     }
-
+  }
+  .mobile-image-container {
+    @media screen and (min-width: 450px) {
+      display: none;
+    }
+    text-align: center;
+    @include rem-fallback(padding, 0.5, 0, 1.25);
   }
   .navbar {
     margin-bottom: 0;
@@ -102,6 +108,37 @@
             margin-right: 0;
           }
         }
+      }
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .social-bar {
+      .float-left {
+        float: none;
+        text-align: center;
+        @include rem-fallback(padding-bottom, 2);
+      }
+      .float-right {
+        float: none;
+        text-align: center;
+        @include rem-fallback(padding-bottom, 2);
+      }
+    }
+    .navbar {
+      .navbar-brand {
+        height: auto;
+        img {
+          display: none;
+        }
+        .text {
+          padding-left: 0;
+          padding-top: 8px;
+          display: block;
+        }
+      }
+      .navbar-toggle {
+        margin-top: 0;
+        margin-bottom: 0;
       }
     }
   }

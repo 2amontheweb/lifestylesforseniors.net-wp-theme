@@ -74,6 +74,9 @@
             </div>
           </div>
         </div>
+        <div class="mobile-image-container">
+          <img class="mobile-image" src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="Top 50 Nav Logo">
+        </div>
         <nav class="navbar">
           <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -84,7 +87,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#">
+              <a class="navbar-brand" href="/">
                 <img src="<?php bloginfo('stylesheet_directory'); ?>/img/logo.png" alt="Top 50 Nav Logo">
                 <span class="text">Lifestyles for Seniors</span>
               </a>
